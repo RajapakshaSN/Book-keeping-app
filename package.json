@@ -1,0 +1,26 @@
+{
+  "name": "book-keeping-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RajapakshaSN/book-keeping-app.git"
+  },
+  "author": "Shasikala Rajapaksha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RajapakshaSN/book-keeping-app/issues"
+  },
+  "homepage": "https://github.com/RajapakshaSN/book-keeping-app#readme",
+  "dependencies": {
+    "express": "4.17.1",
+    "mongoose": "5.13.3"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.12"
+  }
+}
