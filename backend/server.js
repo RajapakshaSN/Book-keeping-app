@@ -1,5 +1,6 @@
 const express = require('express');
 const User = require('./models/User');
+const usersRoute = require('./routes/usersRoute');
 require('./config/dbConnect')();
 const mongoose = require('mongoose');
 const app = express();
@@ -7,37 +8,8 @@ const app = express();
 //Passing body data
 app.use(express.json());
 //Routes
-//Users routes
-app.post('/api/users/register',async (req,res)=>{
-    try {
-        const {name,email,password} = req.body;
-        const user = await User.create({name,email,password});
-        console.log(user);
-        res.send(user);
-    } catch (error) {
-        console.log(error);
-    }
-    
-});
+app.use('/api/users', usersRoute);
 
-//login
-app.post('/api/users/login',(req,res)=>{
-    res.send('login Route');
-});
-//update user
-app.put('/api/users/update',(req,res)=>{
-    res.send('Update Route');
-});
-
-//delete user
-app.delete('/api/users/:id',(req,res)=>{
-    res.send('Delete route');
-});
-
-//fetch Users
-app.get('/api/users',(req,res)=>{
-    res.send('Fetch users');
-});
 
 // //Server
 
