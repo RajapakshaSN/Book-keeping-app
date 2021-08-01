@@ -19,7 +19,7 @@ export default class Login extends Component {
             <form>
               <h3>Log in</h3>
 
-              <div className="form-group">
+              <div className="form-group"  style={{marginTop:'20px',marginBottom:'20px'}}>
                 <label>Email</label>
                 <input
                   type="email"
@@ -28,7 +28,7 @@ export default class Login extends Component {
                 />
               </div>
 
-              <div className="form-group">
+              <div className="form-group" style={{marginTop:'20px',marginBottom:'20px'}}>
                 <label>Password</label>
                 <input
                   type="password"
@@ -37,7 +37,7 @@ export default class Login extends Component {
                 />
               </div>
 
-              <div className="form-group">
+              <div className="form-group"  style={{marginTop:'20px',marginBottom:'20px'}}>
                 <div className="custom-control custom-checkbox">
                   <input
                     type="checkbox"
@@ -47,13 +47,14 @@ export default class Login extends Component {
                   <label
                     className="custom-control-label"
                     htmlFor="customCheck1"
+                    style={{marginBottom:'20px'}}
                   >
                     Remember me
                   </label>
                 </div>
               </div>
 
-              <button type="submit" className="btn btn-dark btn-md btn-block">
+              <button type="submit" className="btn btn-primary btn-md btn-block" >
                 Sign in
               </button>
               <p className="forgot-password text-right">

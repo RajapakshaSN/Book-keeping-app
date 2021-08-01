@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Home from "./components/Home";
+import SideNav  from "./components/sideNav";
 // import "./App.css";
 import {
   BrowserRouter as Router,
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path="/signup">
           <Signup/>
+        </Route>   
+        <Route path="/sidenav">
+          <SideNav/>
         </Route>        
       </Switch>
         

@@ -15,19 +15,10 @@ const FormSignUp = () => {
       <div className="outer">
         <div className="inner">
           <form>
-            <h3>Register</h3>
+            <h3>Register</h3>            
 
-            <div className="form-group">
-              <label>First name</label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="First name"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>Last name</label>
+            <div className="form-group" style={{marginTop:'20px',marginBottom:'20px'}}>
+              <label>Name</label>
               <input
                 type="text"
                 className="form-control"
@@ -35,7 +26,7 @@ const FormSignUp = () => {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-group" style={{marginTop:'20px',marginBottom:'20px'}}>
               <label>Email</label>
               <input
                 type="email"
@@ -44,7 +35,7 @@ const FormSignUp = () => {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-group" style={{marginTop:'20px',marginBottom:'20px'}}>
               <label>Password</label>
               <input
                 type="password"
@@ -53,7 +44,7 @@ const FormSignUp = () => {
               />
             </div>
 
-            <button type="submit" className="btn btn-dark btn-md btn-block">
+            <button type="submit" className="btn btn-primary btn-md btn-block">
               Register
             </button>
             <p className="forgot-password text-right">
